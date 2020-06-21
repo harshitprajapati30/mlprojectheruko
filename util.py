@@ -32,7 +32,7 @@ def load_saved_artifacts():
     global __data_columns
     global __locations
 
-    with open("/static/columns.json", 'r') as f:
+    with open("static/json/columns.json", 'r') as f:
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[3:]
 
